@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Copiar este trecho-->
+    <style>
+        .card-painel {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-titulo {
+            text-align: center;
+        }
+    </style>
+    <!-- Copiar até aqui-->
+</head>
+
+
+<style>
+    .card-painel {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+    }
+
+    .card-titulo {
+        text-align: center;
+        display: grid;
+        margin: 10px;
+    }
+</style>
+
+<body>
+    <hr>
+    <div class="card-painel">
+        <!--Card -->
+        <div class="card">
+            <div class="card-titulo">
+                Alimentação Saudavel: O que consumir?
+            </div>
+            <div class="card-corpo">
+                <div>
+
+                    <img src="data:image/jpeg;base64,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">
+                    <p>Uma alimentação saudável ajuda a proteger contra a má nutrição em todas as suas formas.</p>"
+                    <a  class="bt1" href="">CONTINUE LENDO</a>
+                </div>
+                <div class="card-rodape">
+                    
+                </div>
+            </div>
+        </div>
+        <!--Card -->
+        <div class="card">
+            <div class="card-titulo">
+                Benefícios dos esportes:Quais começar a praticar?
+                <a  class="bt2" href="">CONTINUE LENDO</a>
+            </div>
+            <div class="card-corpo">
+                <div>
+                    <img src="https://s.zst.com.br/cms-assets/2022/02/esportes.webp" width="320px" />
+                </div>
+<style>
+
+.bt1
+
+{
+    position: absolute;
+    top:350px;
+    left: 50px;
+    display: block;
+  background-color: #00995D;
+  border-color: #00995D;
+  color: #fff;
+  min-width: 150px;
+  min-height: 40px;
+  text-align: center;
+  border-radius: 7px;
+}
+
+
+
+.bt2
+
+{
+    position: absolute;
+    top:350px;
+    left: 500px;
+    display: block;
+  background-color: #00995D;
+  border-color: #00995D;
+  color: #fff;
+  min-width: 150px;
+  min-height: 40px;
+  text-align: center;
+  border-radius: 7px;
+}
+
+
+.bt3
+
+{
+    position: absolute;
+    top:350px;
+    left: 1200px;
+    display: block;
+  background-color: #00995D;
+  border-color: #00995D;
+  color: #fff;
+  min-width: 150px;
+  min-height: 40px;
+  text-align: center;
+  border-radius: 7px;
+
+}
+.bt4
+{
+    position: absolute;
+    top:350px;
+    left: 1600px;
+    display: block;
+  background-color: #00995D;
+  border-color: #00995D;
+  color: #fff;
+  min-width: 150px;
+  min-height: 40px;
+  text-align: center;
+  border-radius: 7px;
+}
+
+    
+
+
+</style>
+                
+                <div class="card-rodape">
+                    Os exercícios ajudam a melhorar a
+                    autoestima, a imagem corporal, a cognição e a função social de pacientes em risco de saúde mental.
+                </div>
+            </div>
+        </div>
+        <!--Card -->
+        <div class="card">
+            <div class="card-titulo">
+                <a  class="bt3" href="">CONTINUE LENDO</a>
+                Um bom plano medico é uma avanço para uma melhor saúde?
+            </div>
+            <div class="card-corpo">
+                <div>
+                    <img src="https://setorsaude.com.br/wp-content/uploads/2016/08/Hospitais-buscam-oferecer-servi%C3%A7os-tipo-hot%C3%A9is.jpg" width="320px" />
+                </div>
+                <div class="card-rodape">
+                    Um bom plano medico é uma avanço para uma melhor saúde sim!
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-titulo">
+                Uma alimentação saudavél é algo fundamental?
+                <a  class="bt4" href="">CONTINUE LENDO</a>
+            </div>
+            <div class="card-corpo">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIb3JOWV0a1c55dtXyBuLfknQXNPOpPFyEEg&usqp=CAU" width="320px" />
+                </div>
+                <div class="card-rodape">
+                    Uma boa alimentação é um bom começo para uma vida mais saudável?
+                </div>
+            </div>
+        </div>
+    
+</body>
